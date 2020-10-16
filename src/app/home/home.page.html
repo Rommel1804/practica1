@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title>
+      Suma de numeros
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    
+    <ion-list>
+      <ion-item >
+         <ion-label color="secondary">Valor uno:</ion-label>
+         <ion-input [(ngModel)]="num1"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label color="secondary">Valor dos:</ion-label>
+        <ion-input [(ngModel)]="num2"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-button expand="block" shape="round" (click)="calcular()">Calcular</ion-button>
+      </ion-item>
+      <ion-item color="success">
+        <ion-label>Resultado</ion-label>
+        {{resultado}} 
+      </ion-item>
+
+    
+    </ion-list>
+  </div>
+</ion-content>
